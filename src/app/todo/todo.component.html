@@ -1,0 +1,15 @@
+<mat-card class="max-w-xs h-60">
+    <mat-card-header class="mb-4">
+        <span class="text-blue-500 absolute top-2 right-2">#{{ todo.id }}</span>
+        <mat-card-title>{{ todo.title }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        {{ todo.body }}
+    </mat-card-content>
+    <mat-card-footer class="mt-8 justify-between flex px-4">
+        <button mat-fab aria-label="Delete a todo">
+            <mat-icon>delete</mat-icon>
+        </button>
+        <a class="mt-2" mat-raised-button>Update</a>
+    </mat-card-footer>
+</mat-card>
