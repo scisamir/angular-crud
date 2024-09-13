@@ -1,5 +1,8 @@
 # AngularCrud
 
+An Angular application demonstrating create, read, update, and delete functions in angular, API consumption, with UI created using Angular Materiala
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
 
 ## Development server
