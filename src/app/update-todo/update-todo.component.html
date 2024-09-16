@@ -1,0 +1,20 @@
+<section>
+    <h1 class="font-bold sm:text-5xl text-3xl my-8 text-center text-gray-800">Update Task</h1>
+    <div
+        class="sm:h-16 sm:w-16 w-11 h-11 bg-white border-2 rounded-full flex justify-center items-center ml-12 absolute sm:top-8 top-7 cursor-pointer"
+        (click)="goHome()"
+    >
+        <mat-icon aria-hidden="false" aria-label="Go back home" fontIcon="home" class="text-2xl text-[#005CBB] mb-2"></mat-icon>
+    </div>
+    <form class="min-w-40 sm:max-w-lg max-w-80 mt-30 mx-auto flex flex-col" [formGroup]="updateTodoForm" (submit)="updateTodo()">
+        <mat-form-field class="w-full mt-10 mb-3">
+            <mat-label>Title</mat-label>
+            <input matInput placeholder="Ex. My todo..." formControlName="title"/>
+        </mat-form-field>
+        <mat-form-field class="w-full min-h-52">
+            <mat-label>Body (Description)</mat-label>
+            <textarea matInput placeholder="Ex. I would like to..." formControlName="body" class="min-h-48"></textarea>
+        </mat-form-field>
+        <button mat-stroked-button class="text-xl w-30" type="submit" [disabled]="!updateTodoForm.valid">Update Task</button>
+    </form>
+</section>
